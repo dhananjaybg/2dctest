@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.*
+*.log
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*.bak
+*.db
+*.sqlite3
+*.egg-info/
+# MongoDB data directories
+mongo-data*
+# OS files
+Thumbs.db
