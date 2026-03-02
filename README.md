@@ -14,7 +14,25 @@ This project provides Python scripts to automate the creation, management, and t
 - MongoDB binaries (`mongod`, `mongo` in PATH)
 - [pymongo](https://pypi.org/project/pymongo/), [psutil](https://pypi.org/project/psutil/)
 
-Install dependencies:
+## Create Python Environment
+Create and activate a virtual environment before installing dependencies.
+
+```bash
+# From project root
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+```
+
+For RHEL/Linux (if `python3 -m venv` is missing), install the venv package first:
+
+```bash
+sudo dnf install -y python3-virtualenv || sudo yum install -y python3-virtualenv
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Then install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
